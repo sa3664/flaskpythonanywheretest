@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -b 0.0.0.0:$PORT -k gevent Test_socketio:app
+web: gunicorn --worker-class eventlet -w 1 Test_socketio:app
