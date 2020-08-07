@@ -1,7 +1,7 @@
 
 from flask import Flask,redirect,url_for,render_template
 
-app = Flask(__name__)
+app_test = Flask(__name__)
 
 @app.route("/")
 def home():
@@ -9,11 +9,11 @@ def home():
 
 # @app.route("/<name>")
 # def user(name):
-#     return f"Hello {name}!"
+#     return f"Hello {name}!"s
 
 # @app.route("/admin")
 # def admin():
 #     return redirect(url_for("user",name ="Admin!"))
 
 if __name__ == "__main__":
-    app.run(debug= True )
+    app_test.run(debug= True )
