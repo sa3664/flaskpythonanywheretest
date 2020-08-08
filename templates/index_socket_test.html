@@ -27,11 +27,14 @@
 </head>
 
 <body>
-    <h2>{{ env['SECRET']}}</h2>
+    {% block main %}
+    <h2>{{ config['SECRET']}}</h2>
+    <h2>{{ config.SECRET}}</h2>
     <ul id="messages"></ul>
     </ul>
     <input type="text" id="myMessage">
     <button id="sendbutton">Send</button>
+    {% endblock %}
 </body>
 
 </html>
