@@ -11,7 +11,7 @@
             var socket = io.connect('https://fedexhacktest.herokuapp.com/');
 
             socket.on('connect', function () {
-                socket.send('user has connected !');
+                socket.send('User has connected!!');
             });
             socket.on('message', function (msg) {
                 $("#messages").append('<li>' + msg + '</li>');

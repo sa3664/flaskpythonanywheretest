@@ -13,7 +13,7 @@ def home():
 
 @socketio.on('message')
 def handleMessage(msg):
-    print('Message: '+ msg)
+    print('Message: '+ 'casted message =' + msg)
     send(msg , broadcast =True)
 
 if __name__ == '__main__':
